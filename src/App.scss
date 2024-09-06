@@ -1,0 +1,34 @@
+$primary: #E84A27;
+$info: #003B6F;
+$dark: #13294B;
+
+@import "~bootstrap/scss/bootstrap";
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: #13294B; // Custom body background color
+    --bs-secondary-bg-rgb: 0, 59, 111;
+  }
+
+.topContainer {
+  min-height:100vh;
+}
+
+.nameHeader {font-size: 10rem}
+.researchProject {padding-top: 1.3rem; padding-bottom:1.3rem}
+.researchProjectFirst {padding-bottom:2rem}
+.researchProjectLast {padding-top: 1.3rem;}
+#finalSectionBeforeFooter {padding-bottom: 11rem;}
+
+@media (max-width: 767.98px) {
+  #finalSectionBeforeFooter {padding-bottom: 6rem;}
+  .researchProject {padding-top: 0.5rem; padding-bottom:0.5rem}
+  .researchProjectFirst {padding-bottom:0.5rem}
+  .researchProjectLast {padding-top: 0.5rem;}
+}
+
+@media (max-width: 992px) {
+  .nameHeader {font-size: 4rem}
+}
+html, body {
+  overflow-x:hidden 
+} 
